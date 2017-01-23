@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Source+Sans+Pro');
+
+body{
+  font-family: 'Source Sans Pro', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/images/runaway-back.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bungee{
+  font-family: 'Bungee Shade', cursive;
+}
+
+h3{
+  color: white;
+}
+
+.video{
+  margin-top: 3rem;
+}
