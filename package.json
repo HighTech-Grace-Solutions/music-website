@@ -1,14 +1,13 @@
 {
   "name": "jdonisvitch-music",
-  "version": "0.0.2",
-  "description": "A React single page starter-kit with react-bootstrap and simple es6/es7 classes and jsx components",
+  "version": "0.0.3",
+  "description": "A single page website for highlighting music",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --progress"
   },
   "author": "Jerry Garcia @ BRS",
-  "license": "NO LICENSE",
+  "license": "UNLICENSED",
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
@@ -16,7 +15,7 @@
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.0",
     "react-dom": "^15.1.0",
-    "webpack": "^1.13.1",
+    "webpack": "^1.14.0",
     "webpack-dev-server": "^1.14.1"
   },
   "devDependencies": {

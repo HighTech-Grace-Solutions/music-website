@@ -1,13 +1,15 @@
-const config = {
+'use-strict';
+
+module.exports = {
+
   entry: './main.js',
 
   output: {
-    path:'./',
     filename: 'index.js'
   },
 
   devServer:{
-    inline: true,
+    inline: false,
     port: 3000
   },
 
@@ -25,5 +27,3 @@ const config = {
      ]
   }
 };
-
-module.exports = config;

@@ -4,7 +4,7 @@ body{
   font-family: 'Source Sans Pro', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/images/runaway-back.jpg');
+  background-image: url('images/runaway-back.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,7 @@ body{
   font-family: 'Bungee Shade', cursive;
 }
 
-h3{
+h1, h2, h3, h4, h5{
   color: white;
 }
 
