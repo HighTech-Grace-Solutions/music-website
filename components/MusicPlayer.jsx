@@ -23,13 +23,13 @@ class MusicPlayer extends React.Component {
           <Col xs={12} sm={6}>
             <h3>Runaway EP - released October 24, 2013</h3>
             <iframe style={StyleSheet} src={BandCamp.runaway} seamless>
-              <a href='http://donisvitch.bandcamp.com/album/runaway'>Runaway</a>
+              <a href='https://donisvitch.bandcamp.com/album/runaway'>Runaway</a>
             </iframe>
           </Col>
           <Col xs={12} sm={6}>
             <h3>Riding Out The Storm - released August 1, 2013</h3>
             <iframe style={StyleSheet} src={BandCamp.storm} seamless>
-              <a href='http://https://penumbrarecordings.bandcamp.com/track/riding-out-the-storm'>Riding Out The Storm</a>
+              <a href='https://penumbrarecordings.bandcamp.com/track/riding-out-the-storm'>Riding Out The Storm</a>
             </iframe>
           </Col>
         </Row>

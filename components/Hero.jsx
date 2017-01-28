@@ -8,23 +8,20 @@ const heroObj = {
   subtitle: 'A unique Singer-Songwriter and Guitarist in Portland, Maine.'
 };
 
+const styleSheet = {
+  hero: {
+    color: 'white',
+    borderRadius: '0',
+    textAlign: 'center',
+    background: 'transparent',
+    marginTop: '30px'
+  },
+  h3: {
+  }
+};
+
 class Hero extends React.Component {
   render() {
-
-    const styleSheet = {
-      hero: {
-        color: 'black',
-        borderRadius: '0',
-        textAlign: 'center',
-        background: 'url(images/jared-penumbra-glitch.png) no-repeat',
-        backgroundPosition: 'center 30%',
-        marginTop: '50px'
-      },
-      h3: {
-        color: 'black'
-      }
-    };
-
     return (
       <Jumbotron style={styleSheet.hero} id='top'>
         <h1 className='bungee'>{heroObj.title}</h1>

@@ -8,7 +8,7 @@ class VideoPlayer extends React.Component {
 
     return (
       <Grid id='video'>
-        <Row className='video'>
+        <Row>
           <Col xs={12}>
           <h3>Penumbra Recordings - Naked&Free - October 2013</h3>
           <ResponsiveEmbed a16by9>

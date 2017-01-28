@@ -5,9 +5,10 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('images/runaway-back.jpg');
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .bungee{
@@ -16,8 +17,4 @@ body{
 
 h1, h2, h3, h4, h5{
   color: white;
-}
-
-.video{
-  margin-top: 3rem;
 }

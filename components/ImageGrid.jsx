@@ -26,7 +26,7 @@ class ImageGrid extends React.Component {
 
     return (
       <Grid id='images'>
-        <h1>Images of Past Shows / Projects</h1>
+        <h1>Images / Photos </h1>
         <h3>Sparksea - Portland House Of Music - 2016</h3>
         <Row className='show-grid'>
           <Col xs={12} md={4}>
@@ -65,7 +65,7 @@ class ImageGrid extends React.Component {
             <Image src={gridObj.posters.img_3} responsive />
           </Col>
         </Row>
-        <h5>While supporting my acoustic project, these are some of the posters from the shows that I played!</h5>
+        <h5>While supporting my acoustic project, these are a few of the posters from the shows that I played!</h5>
       </Grid>
     );
   }
