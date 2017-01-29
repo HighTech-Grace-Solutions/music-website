@@ -9,15 +9,14 @@ import SocialMedia from './SocialMedia.jsx';
 import Projects from './Projects.jsx';
 import About from './About.jsx';
 
+const styleSheet = {
+  height: 'auto',
+  position: 'relative',
+  top: '70px'
+};
+
 class Container extends React.Component  {
   render(){
-
-    const styleSheet = {
-      height: 'auto',
-      position: 'relative',
-      top: '70px'
-    };
-
     return (
       <div className='container-fluid' style={styleSheet}>
           <Hero/>

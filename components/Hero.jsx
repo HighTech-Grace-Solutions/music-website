@@ -15,8 +15,6 @@ const styleSheet = {
     textAlign: 'center',
     background: 'transparent',
     marginTop: '30px'
-  },
-  h3: {
   }
 };
 
@@ -24,8 +22,8 @@ class Hero extends React.Component {
   render() {
     return (
       <Jumbotron style={styleSheet.hero} id='top'>
-        <h1 className='bungee'>{heroObj.title}</h1>
-        <h3 style={styleSheet.h3}>{heroObj.subtitle}</h3>
+        <h1>{heroObj.title}</h1>
+        <h3>{heroObj.subtitle}</h3>
       </Jumbotron>
     );
   }

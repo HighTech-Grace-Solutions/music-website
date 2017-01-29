@@ -3,6 +3,7 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
+
 const navObj = {
   title: 'JD',
   subtitle: 'Music, Software, Geo.',
@@ -14,7 +15,6 @@ const navObj = {
 
 class Navigation extends React.Component {
   render() {
-
     return(
       <Navbar inverse fixedTop>
         <Navbar.Header>

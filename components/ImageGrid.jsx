@@ -23,7 +23,6 @@ const gridObj = {
 
 class ImageGrid extends React.Component {
   render() {
-
     return (
       <Grid id='images'>
         <h1>Images / Photos </h1>

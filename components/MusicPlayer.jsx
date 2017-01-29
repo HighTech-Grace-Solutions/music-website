@@ -16,18 +16,17 @@ const StyleSheet = {
 
 class MusicPlayer extends React.Component {
   render() {
-
     return (
       <Grid id='music'>
         <Row>
           <Col xs={12} sm={6}>
-            <h3>Runaway EP - released October 24, 2013</h3>
+            <h3>Runaway EP <i>- released October 24, 2013</i></h3>
             <iframe style={StyleSheet} src={BandCamp.runaway} seamless>
               <a href='https://donisvitch.bandcamp.com/album/runaway'>Runaway</a>
             </iframe>
           </Col>
           <Col xs={12} sm={6}>
-            <h3>Riding Out The Storm - released August 1, 2013</h3>
+            <h3>Riding Out The Storm <i>- released August 1, 2013</i></h3>
             <iframe style={StyleSheet} src={BandCamp.storm} seamless>
               <a href='https://penumbrarecordings.bandcamp.com/track/riding-out-the-storm'>Riding Out The Storm</a>
             </iframe>

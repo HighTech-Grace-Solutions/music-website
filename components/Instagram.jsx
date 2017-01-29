@@ -17,7 +17,6 @@ class Instagram extends React.Component {
     return (
       <div id='instafeed'></div>
     );
-
   }
 }
 

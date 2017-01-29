@@ -5,19 +5,18 @@ import { Grid, Row, Col} from 'react-bootstrap';
 
 class Projects extends React.Component {
   render() {
-
     return (
       <Grid id='projects'>
         <h1> Current / Past Musical Projects </h1>
         <Row className='show-grid'>
           <Col xs={12} md={4}>
-            <h1>Heard of Cats</h1>
+            <h2>Heard of Cats</h2>
           </Col>
           <Col xs={12} md={4}>
-            <h1>The Obamacares</h1>
+            <h2>The Obamacares</h2>
           </Col>
           <Col xs={12} md={4}>
-            <h1>Norwood.</h1>
+            <h2>Norwood</h2>
           </Col>
         </Row>
       </Grid>

@@ -5,7 +5,6 @@ import { Grid, Row, Col} from 'react-bootstrap';
 
 class About extends React.Component {
   render() {
-
     return (
       <Grid id='about'>
         <h1>About / Bio</h1>
