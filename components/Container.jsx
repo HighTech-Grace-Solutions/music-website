@@ -20,11 +20,11 @@ class Container extends React.Component  {
     return (
       <div className='container-fluid' style={styleSheet}>
           <Hero/>
-          <About/>
           <MusicPlayer/>
           <ImageGrid/>
           <VideoPlayer/>
           <SocialMedia/>
+          <About/>
           <Projects/>
       </div>
     );

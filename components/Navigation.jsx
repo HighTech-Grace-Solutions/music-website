@@ -8,23 +8,33 @@ const navObj = {
   title: 'JD',
   subtitle: 'Music, Software, Geo.',
   logo: 'images/logo-transparent.png',
-  style: {
-    fontSize: '1.2em'
+  navStyle: {
+    fontSize: '1.2em',
+    color: 'white',
+    fontWeight: 'bold'
+  },
+  navBarStyle: {
+    backgroundColor: 'rgba(0,0,0,0.8)'
+  },
+  brandStyle: {
+    color: 'white',
+    fontSize: '1.4em',
+    marginTop: '0px'
   }
 };
 
 class Navigation extends React.Component {
   render() {
     return(
-      <Navbar inverse fixedTop>
+      <Navbar inverse fixedTop style={navObj.navBarStyle}>
         <Navbar.Header>
           <Navbar.Brand className='bungee'>
-            <a href='#top'>{navObj.title}</a>
+            <a href='#top' style={navObj.brandStyle}>{navObj.title}</a>
           </Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav style={navObj.style}>
+          <Nav style={navObj.navStyle}>
             <NavItem eventKey={1} href='#about'>ABOUT</NavItem>
             <NavItem eventKey={2} href='#images'>PHOTOS</NavItem>
             <NavItem eventKey={3} href='#projects'>PROJECTS</NavItem>

@@ -5,7 +5,7 @@ import { Jumbotron } from 'react-bootstrap';
 
 const heroObj = {
   title: 'Jared Donisvitch',
-  subtitle: 'A unique Singer-Songwriter and Guitarist in Portland, Maine.'
+  subtitle: 'Singer-Songwriter, and Guitarist in Portland, Maine.'
 };
 
 const styleSheet = {
