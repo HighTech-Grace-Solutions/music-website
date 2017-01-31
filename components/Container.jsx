@@ -9,23 +9,24 @@ import SocialMedia from './SocialMedia.jsx';
 import Projects from './Projects.jsx';
 import About from './About.jsx';
 
-const styleSheet = {
-  height: 'auto',
-  position: 'relative',
-  top: '70px'
+const internals = {};
+
+internals.style = {
+    height: 'auto',
+    position: 'relative'
 };
 
 class Container extends React.Component  {
   render(){
     return (
-      <div className='container-fluid' style={styleSheet}>
-          <Hero/>
-          <MusicPlayer/>
-          <ImageGrid/>
-          <VideoPlayer/>
-          <SocialMedia/>
-          <About/>
-          <Projects/>
+      <div className='container-fluid main' style={internals.style}>
+        <Hero/>
+        <About/>
+        <SocialMedia/>
+        <ImageGrid/>
+        <MusicPlayer/>
+        <VideoPlayer/>
+        <Projects/>
       </div>
     );
   }

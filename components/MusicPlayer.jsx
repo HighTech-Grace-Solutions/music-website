@@ -19,6 +19,9 @@ class MusicPlayer extends React.Component {
     return (
       <Grid id='music'>
         <Row>
+          <Col xs={12} sm={12}>
+            <h1>Recordings</h1>
+          </Col>
           <Col xs={12} sm={6}>
             <h3>Runaway EP <i>- released October 24, 2013</i></h3>
             <iframe style={StyleSheet} src={BandCamp.runaway} seamless>

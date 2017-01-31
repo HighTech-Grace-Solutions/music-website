@@ -2,16 +2,15 @@
 
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
-
+import SmoothScroll from './SmoothScroll.jsx';
 
 const navObj = {
   title: 'JD',
   subtitle: 'Music, Software, Geo.',
   logo: 'images/logo-transparent.png',
   navStyle: {
-    fontSize: '1.2em',
-    color: 'white',
-    fontWeight: 'bold'
+    fontSize: '1em',
+    color: 'white'
   },
   navBarStyle: {
     backgroundColor: 'rgba(0,0,0,0.8)'
@@ -29,18 +28,18 @@ class Navigation extends React.Component {
       <Navbar inverse fixedTop style={navObj.navBarStyle}>
         <Navbar.Header>
           <Navbar.Brand className='bungee'>
-            <a href='#top' style={navObj.brandStyle}>{navObj.title}</a>
+            <a style={navObj.brandStyle}><SmoothScroll id='top' name={navObj.title}></SmoothScroll></a>
           </Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav style={navObj.navStyle}>
-            <NavItem eventKey={1} href='#about'>ABOUT</NavItem>
-            <NavItem eventKey={2} href='#images'>PHOTOS</NavItem>
-            <NavItem eventKey={3} href='#projects'>PROJECTS</NavItem>
-            <NavItem eventKey={4} href='#music'>MUSIC</NavItem>
-            <NavItem eventKey={5} href='#social'>SOCIAL</NavItem>
-            <NavItem eventKey={6} href='#video'>VIDEO</NavItem>
+            <NavItem eventKey={1}><SmoothScroll id='about' name='ABOUT'></SmoothScroll></NavItem>
+            <NavItem eventKey={2}><SmoothScroll id='images' name='IMAGES'></SmoothScroll></NavItem>
+            <NavItem eventKey={3}><SmoothScroll id='projects' name='PROJECTS'></SmoothScroll></NavItem>
+            <NavItem eventKey={4}><SmoothScroll id='music' name='MUSIC'></SmoothScroll></NavItem>
+            <NavItem eventKey={5}><SmoothScroll id='social' name='SOCIAL'></SmoothScroll></NavItem>
+            <NavItem eventKey={6}><SmoothScroll id='video' name='VIDEO'></SmoothScroll></NavItem>
           </Nav>
           <Nav pullRight>
             <NavItem eventKey={7} href='https://facebook.com/donisvitchmusic' target='_blank' alt='Facebook'>

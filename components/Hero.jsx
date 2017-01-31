@@ -8,22 +8,31 @@ const heroObj = {
   subtitle: 'Singer-Songwriter, and Guitarist in Portland, Maine.'
 };
 
-const styleSheet = {
-  hero: {
-    color: 'white',
-    borderRadius: '0',
-    textAlign: 'center',
-    background: 'transparent',
-    marginTop: '30px'
-  }
+const internals = {};
+  internals.styles = {
+    hero: {
+      color: 'white',
+      borderRadius: '0',
+      textAlign: 'center',
+      background: 'transparent',
+      height: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    p:{
+      maxWidth: '50%'
+    }
 };
 
 class Hero extends React.Component {
   render() {
     return (
-      <Jumbotron style={styleSheet.hero} id='top'>
-        <h1>{heroObj.title}</h1>
-        <h3>{heroObj.subtitle}</h3>
+      <Jumbotron style={internals.styles.hero} id='top'>
+        <p>
+          <h1 style={internals.styles.h1}>{heroObj.title}</h1>
+          <h3 style={internals.styles.h3}>{heroObj.subtitle}</h3>
+        </p>
       </Jumbotron>
     );
   }
