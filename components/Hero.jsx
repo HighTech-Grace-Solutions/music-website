@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
+import SmoothScroll from './SmoothScroll.jsx';
 
 const heroObj = {
   title: 'Jared Donisvitch',
@@ -22,6 +23,9 @@ const internals = {};
     },
     p:{
       maxWidth: '50%'
+    },
+    scroll:{
+      alignSelf: 'flex-end'
     }
 };
 
@@ -29,10 +33,13 @@ class Hero extends React.Component {
   render() {
     return (
       <Jumbotron style={internals.styles.hero} id='top'>
-        <p>
+        <div>
           <h1 style={internals.styles.h1}>{heroObj.title}</h1>
           <h3 style={internals.styles.h3}>{heroObj.subtitle}</h3>
-        </p>
+        </div>
+        <div style={internals.styles.scroll}>
+          <SmoothScroll id='about' name='vvv'></SmoothScroll>
+        </div>
       </Jumbotron>
     );
   }

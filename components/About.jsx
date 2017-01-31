@@ -20,7 +20,7 @@ class About extends React.Component {
             </h3>
             <h5>
               <p>
-                It all started in the attic of a big colonial on Norwood Street in Deering Center - Portland, Maine.
+                It all started in the attic of a gambrel style home on Norwood Street in Deering Center - Portland, Maine.
               </p>
               <p>
                 The first project was loosely named Second Letter. All because we all had the same second letter in our names, seriously.
