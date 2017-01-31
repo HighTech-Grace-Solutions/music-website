@@ -3,7 +3,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import NavItemScroll from './NavItemScroll.jsx';
-import ScrollLite from './ScrollLite.jsx';
 
 const navObj = {
   title: 'JD',
@@ -29,7 +28,7 @@ class Navigation extends React.Component {
       <Navbar inverse fixedTop style={navObj.navBarStyle}>
         <Navbar.Header>
           <Navbar.Brand className='bungee'>
-            <a style={navObj.brandStyle}><ScrollLite id='top' name={navObj.title}></ScrollLite></a>
+            <a style={navObj.brandStyle}><SmoothScroll id='top' name={navObj.title}></SmoothScroll></a>
           </Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>

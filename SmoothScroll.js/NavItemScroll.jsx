@@ -1,8 +1,9 @@
 'use-strict';
 
 import React from 'react';
+import { NavItem } from 'react-bootstrap';
 
-class SmoothScroll extends React.Component {
+class NavItemScroll extends React.Component {
 
   getTop(){
 
@@ -12,34 +13,34 @@ class SmoothScroll extends React.Component {
       client: document.documentElement.clientTop || document.body.clientTop || 0
     };
 
-    return Math.round((top.box + top.scroll) - top.client);
+    return Math.round(top.box + top.scroll - top.client);
   }
 
   scrollToTop(){
 
     const top = this.getTop();
-    const speed = 15;
+    const speed = this.props.speed || 20;
 
     let y = Math.floor(window.scrollY);
 
     if(y < top){
 
-      const scrollWindow = setInterval(() => {
+      const down = setInterval(() => {
         y = y + speed;
         if(y >= top){
-          return clearInterval(scrollWindow);
+          return clearInterval(down);
         }
-        return window.scrollTo(0, y);
+        window.scrollTo(0, y);
       }, 3);
 
     } else if(y > top){
 
-      const scrollWindow = setInterval(() => {
+      const up = setInterval(() => {
         y = y - speed;
         if(y <= top){
-          return clearInterval(scrollWindow);
+          return clearInterval(up);
         }
-        return window.scrollTo(0, y);
+        window.scrollTo(0, y);
       }, 3);
 
     }
@@ -49,11 +50,11 @@ class SmoothScroll extends React.Component {
   render(){
 
     return (
-      <span onClick={::this.scrollToTop}>{this.props.name}</span>
+      <NavItem eventKey={this.props.eventKey} onClick={::this.scrollToTop}>{this.props.name}</NavItem>
     );
 
   }
 
 }
 
-export default SmoothScroll;
+export default NavItemScroll;
