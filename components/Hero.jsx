@@ -21,11 +21,12 @@ const internals = {};
       alignItems: 'center',
       justifyContent: 'center'
     },
-    p:{
+    content:{
       maxWidth: '50%'
     },
     scroll:{
-      alignSelf: 'flex-end'
+      position: 'relative',
+      top: '35vh'
     }
 };
 
@@ -36,10 +37,9 @@ class Hero extends React.Component {
         <div>
           <h1 style={internals.styles.h1}>{heroObj.title}</h1>
           <h3 style={internals.styles.h3}>{heroObj.subtitle}</h3>
+          <ScrollLite style={internals.styles.scroll} id='about' speed={5} className='fa fa-arrow-down fa-2x'></ScrollLite>
         </div>
-        <div style={internals.styles.scroll}>
-          <ScrollLite id='about' name='vvv' speed={30}></ScrollLite>
-        </div>
+
       </Jumbotron>
     );
   }

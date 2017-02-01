@@ -49,7 +49,7 @@ class ScrollLite extends React.Component {
   render(){
 
     return (
-      <span onClick={::this.scrollToTop}>{this.props.name}</span>
+      <span onClick={::this.scrollToTop} className={this.props.className} style={this.props.style}>{this.props.name}</span>
     );
 
   }
