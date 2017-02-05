@@ -1,6 +1,6 @@
 {
   "name": "jdonisvitch-music",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A single page website for highlighting music",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,10 @@
   "author": "Jerry Garcia @ BRS",
   "license": "UNLICENSED",
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
     "instafeed.js": "^1.4.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.14.1"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -26,6 +22,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-eslint": "^4.1.3",
     "eslint": "^1.10.3",
-    "eslint-plugin-react": "^3.6.2"
+    "eslint-plugin-react": "^3.6.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.14.1"
   }
 }
