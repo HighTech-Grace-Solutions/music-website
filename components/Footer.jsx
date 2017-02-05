@@ -14,7 +14,7 @@ const styleSheet = {
     background: '',
     left:'0px',
     right:'0px',
-    width: '100%',
+    width: '100vw',
     padding:'2em',
     color:'#9d9d9d',
     marginTop:'5em'

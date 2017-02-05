@@ -22,11 +22,11 @@ const internals = {};
       justifyContent: 'center'
     },
     content:{
-      maxWidth: '50%'
+      maxWidth: '50vw'
     },
     scroll:{
       position: 'relative',
-      top: '35vh'
+      top: '15vh'
     }
 };
 

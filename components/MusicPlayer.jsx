@@ -10,7 +10,7 @@ const BandCamp = {
 
 const StyleSheet = {
   border: '0',
-  width: '100%',
+  width: '100vw',
   height: '700px'
 };
 

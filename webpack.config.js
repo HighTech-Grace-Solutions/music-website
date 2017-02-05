@@ -1,11 +1,12 @@
 'use-strict';
+const webpack = require('webpack');
 
 module.exports = {
 
   entry: './main.js',
 
   output: {
-    filename: 'index.js'
+    filename: 'app.js',
   },
 
   devServer:{
@@ -25,5 +26,12 @@ module.exports = {
            }
         }
      ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
+  ]
 };
