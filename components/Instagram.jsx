@@ -5,6 +5,7 @@ import Instafeed from 'instafeed.js';
 
 class Instagram extends React.Component {
   render() {
+
     new Instafeed({
       get: 'user',
       userId: '939099016',
