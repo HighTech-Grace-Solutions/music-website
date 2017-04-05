@@ -28,7 +28,7 @@ class About extends React.Component {
                 puberty, (sorry). We then evolved into The Holiday Hams, later on -- we finally settled on the band name Norwood.
               </p>
               <p>
-                Norwood was successful in churning up some original tunes and evolving throughout the years.
+                Norwood was successful in churning up some original tunes and evolving some throughout the years.
                 Due to our age and inexperience, it was a uphill battle scheduling any shows outside of Deering High School,
                 or the few all ages venues in Portland at the time. We did our best to get shows and made it to the Maine Highschool Rockoff Finals as
                 a three piece, where Nash won Best Bassist. We learned alot from the experience and continued to build off the momentum.
@@ -45,7 +45,7 @@ class About extends React.Component {
               </p>
               <p>
                 After highschool, I played few stints in some local projects such as Fifth Freedom, Casco Fiasco and many unnamed projects.
-                Nothing was quite the right fit and as I moved onto college my focus was learning science and math, not so much bands.
+                Nothing was quite the right fit and as I moved onto college my focus was learning science and math, not so much on starting a band.
               </p>
             </h5>
           </Col>
