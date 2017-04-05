@@ -26,7 +26,7 @@ class ImageGrid extends React.Component {
     return (
       <Grid id='images'>
         <h1>Images / Photos </h1>
-        <h3>Sparksea - Portland House Of Music - 2016</h3>
+        <h3>Sparxsea - Portland House Of Music - 2016</h3>
         <Row className='show-grid'>
           <Col xs={12} md={4}>
             <Image src={gridObj.sparksea.img_1} responsive />
@@ -38,7 +38,7 @@ class ImageGrid extends React.Component {
             <Image src={gridObj.sparksea.img_3} responsive />
           </Col>
         </Row>
-        <h5>Now dubbed the <b>Heard Of Cats</b> - the Cats were featured as part of <b>Sparksea's</b> band for her show at PHOME.</h5>
+        <h5>Now dubbed the <b>Heard Of Cats</b> - the Cats were featured as part of <b>Sparxsea's</b> band for her show at PHOME.</h5>
         <h3>Local Buzz Acoustic Showcase - 2014</h3>
         <Row className='show-grid'>
           <Col xs={12} md={4}>
@@ -51,7 +51,7 @@ class ImageGrid extends React.Component {
             <Image src={gridObj.localbuzz.img_3} responsive />
           </Col>
         </Row>
-        <h5>Ryan Ellis (Mechanical Banshees), Chelsea Toussaint (Sparksea), and I jammed some really fun acoustic shows @TheLocalBuzz.</h5>
+        <h5>Ryan Ellis (Mechanical Banshees), Chelsea Toussaint (Sparxsea), and I jammed some really fun acoustic shows @TheLocalBuzz.</h5>
         <h3>Posters of Past Shows</h3>
         <Row className='show-grid'>
           <Col xs={12} md={4}>
