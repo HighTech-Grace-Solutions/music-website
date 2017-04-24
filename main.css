@@ -9,6 +9,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  height: auto;
 }
 
 .bungee{
@@ -25,4 +27,17 @@ h1, h2, h3, h4, h5, p{
 
 .main > .container{
   padding-top: 5rem;
+}
+
+@keyframes bounce{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-15px);
+  }
+}
+
+.bounce{
+  animation: bounce 1s ease-in-out 0s infinite alternate;
 }

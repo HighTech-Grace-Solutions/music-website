@@ -1,4 +1,5 @@
 'use-strict';
+
 const webpack = require('webpack');
 
 module.exports = {
@@ -6,12 +7,12 @@ module.exports = {
   entry: './main.js',
 
   output: {
-    filename: 'app.js',
+      filename: 'app.js',
   },
 
   devServer:{
-    inline: false,
-    port: 3000
+      inline: false,
+      port: 3000
   },
 
   module: {
@@ -28,10 +29,10 @@ module.exports = {
      ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    })
+      new webpack.DefinePlugin({
+          'process.env': {
+            'NODE_ENV': JSON.stringify('production')
+          }
+      })
   ]
 };

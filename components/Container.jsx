@@ -17,19 +17,19 @@ internals.style = {
 };
 
 class Container extends React.Component  {
-  render(){
-    return (
-      <div className='container-fluid main' style={internals.style}>
-        <Hero/>
-        <About/>
-        <SocialMedia/>
-        <ImageGrid/>
-        <MusicPlayer/>
-        <VideoPlayer/>
-        <Projects/>
-      </div>
-    );
-  }
+    render(){
+        return (
+          <div className='container-fluid main' style={internals.style}>
+            <Hero/>
+            <About/>
+            <SocialMedia/>
+            <ImageGrid/>
+            <MusicPlayer/>
+            <VideoPlayer/>
+            <Projects/>
+          </div>
+        );
+    }
 }
 
 export default Container;

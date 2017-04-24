@@ -5,19 +5,19 @@ import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 const gridObj = {
   localbuzz: {
-    img_1: 'images/local-buzz.jpg',
-    img_2: 'images/local-buzz-2.jpg',
-    img_3: 'images/local-buzz-1.jpg'
+      img_1: 'images/local-buzz.jpg',
+      img_2: 'images/local-buzz-2.jpg',
+      img_3: 'images/local-buzz-1.jpg'
   },
   posters: {
-    img_1: 'images/local-buzz-poster.jpg',
-    img_2: 'images/pantry-party-poster.jpg',
-    img_3: 'images/flask-lounge-poster.jpg'
+      img_1: 'images/local-buzz-poster.jpg',
+      img_2: 'images/pantry-party-poster.jpg',
+      img_3: 'images/flask-lounge-poster.jpg'
   },
   sparksea: {
-    img_1: 'images/sparksea-phome-group.jpg',
-    img_2: 'images/sparksea-heard-of-cats.jpg',
-    img_3: 'images/sparksea-phome-group-2.jpg'
+      img_1: 'images/sparksea-phome-group.jpg',
+      img_2: 'images/sparksea-heard-of-cats.jpg',
+      img_3: 'images/sparksea-phome-group-2.jpg'
   }
 };
 

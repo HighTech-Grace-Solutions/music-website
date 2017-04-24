@@ -5,55 +5,55 @@ import { NavItem } from 'react-bootstrap';
 
 class NavItemScroll extends React.Component {
 
-  getTop(){
+    getTop(){
 
-    const top = {
-      box: document.getElementById(this.props.id).getBoundingClientRect().top,
-      scroll: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
-      client: document.documentElement.clientTop || document.body.clientTop || 0
-    };
+        const top = {
+            box: document.getElementById(this.props.id).getBoundingClientRect().top,
+            scroll: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+            client: document.documentElement.clientTop || document.body.clientTop || 0
+        };
 
-    return Math.round(top.box + top.scroll - top.client);
-  }
+        return Math.round(top.box + top.scroll - top.client);
+    }
 
-  scrollToTop(){
+    scrollToTop(){
 
-    const top = this.getTop();
-    const speed = this.props.speed || 20;
+        const top = this.getTop();
+        const speed = this.props.speed || 20;
 
-    let y = Math.floor(window.scrollY);
+        let y = Math.floor(window.scrollY);
 
-    if(y < top){
+        if(y < top){
 
-      const down = setInterval(() => {
-        y = y + speed;
-        if(y >= top){
-          return clearInterval(down);
+            const down = setInterval(() => {
+                y = y + speed;
+                if(y >= top){
+                    return clearInterval(down);
+                }
+                window.scrollTo(0, y);
+            }, 3);
+
+        } else if(y > top){
+
+            const up = setInterval(() => {
+                y = y - speed;
+                if(y <= top){
+                    return clearInterval(up);
+                }
+                window.scrollTo(0, y);
+            }, 3);
+
         }
-        window.scrollTo(0, y);
-      }, 3);
-
-    } else if(y > top){
-
-      const up = setInterval(() => {
-        y = y - speed;
-        if(y <= top){
-          return clearInterval(up);
-        }
-        window.scrollTo(0, y);
-      }, 3);
 
     }
 
-  }
+    render(){
 
-  render(){
+        return (
+          <NavItem eventKey={this.props.eventKey} onClick={::this.scrollToTop}>{this.props.name}</NavItem>
+        );
 
-    return (
-      <NavItem eventKey={this.props.eventKey} onClick={::this.scrollToTop}>{this.props.name}</NavItem>
-    );
-
-  }
+    }
 
 }
 
