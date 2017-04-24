@@ -7,7 +7,7 @@ body{
 }
 
 body:before {
-  content: "";
+  content: '';
   display: block;
   position: fixed;
   left: 0;
@@ -21,7 +21,6 @@ body:before {
   -o-background-size: cover;
   background-size: cover;
 }
-
 
 .bungee{
   font-family: 'Bungee Shade', cursive;

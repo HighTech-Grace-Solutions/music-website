@@ -1,6 +1,6 @@
 {
   "name": "jdonisvitch-music",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A single page website for highlighting music",
   "main": "app.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "webpack -p --progress"
   },
   "author": "Jerry Garcia @ BRS",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "instafeed.js": "^1.4.1",
     "react": "^15.5.4",
