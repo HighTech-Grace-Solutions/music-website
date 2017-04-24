@@ -4,14 +4,24 @@ body{
   font-family: 'Source Sans Pro', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('images/runaway-back.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
 }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('images/runaway-back.jpg'); no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .bungee{
   font-family: 'Bungee Shade', cursive;
@@ -34,10 +44,10 @@ h1, h2, h3, h4, h5, p{
     transform: translateY(0px);
   }
   to{
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
 }
 
 .bounce{
-  animation: bounce 1s ease-in-out 0s infinite alternate;
+  animation: bounce 1.2s ease 0s infinite alternate;
 }
