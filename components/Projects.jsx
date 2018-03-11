@@ -11,7 +11,7 @@ class Projects extends React.Component {
             <Row className='show-grid'>
               <Col xs={12} md={4}>
                 <h2>Heard of Cats</h2>
-                <p>A funky experimental rock, jazz, blues, punk and metal band.</p>
+                <p>A piano driven rock group, covers and originals!</p>
                 <p>More coming soon!</p>
               </Col>
               <Col xs={12} md={4}>
