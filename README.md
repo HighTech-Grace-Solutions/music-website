@@ -6,7 +6,4 @@
 
 >Run the App -> `npm start`
 
->Build the App -> `webpack -p --progress`
-
-
-(TODO: implement and allow `npm build` to work properly)
+>Build the App -> `npm run build`
