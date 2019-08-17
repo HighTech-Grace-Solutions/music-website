@@ -23,7 +23,7 @@ module.exports = {
            loader: 'babel-loader',
 
            query: {
-              presets: ['es2015', 'stage-0', 'react']
+              presets: ['@babel/preset-env', '@babel/preset-react']
            }
         }
      ]
@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
       new webpack.DefinePlugin({
           'process.env': {
-            'NODE_ENV': JSON.stringify('production')
+              'NODE_ENV': JSON.stringify('production')
           }
       })
   ]

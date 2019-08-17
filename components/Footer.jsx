@@ -25,13 +25,16 @@ const styleSheet = {
 };
 
 class Footer extends React.Component {
+
     render(){
+
         return (
-          <div style={styleSheet.container}>
-            <footer style={styleSheet.footer}>
-              <p>&copy; {footerObj.date} - {footerObj.name}</p>
-            </footer>
-          </div>
+
+            <div style={styleSheet.container}>
+                <footer style={styleSheet.footer}>
+                    <p>&copy; {footerObj.date} - {footerObj.name}</p>
+                </footer>
+            </div>
         );
     }
 }

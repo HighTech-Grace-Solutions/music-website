@@ -4,7 +4,7 @@ import React from 'react';
 
 class ScrollLite extends React.Component {
 
-    getTop(){
+    getTop() {
 
         const top = {
           box: document.getElementById(this.props.id).getBoundingClientRect().top,
@@ -13,9 +13,9 @@ class ScrollLite extends React.Component {
         };
 
         return Math.round(top.box + top.scroll - top.client);
-        }
+    }
 
-        scrollToTop(){
+    scrollToTop() {
 
         const top = this.getTop();
         const speed = this.props.speed || 20;
@@ -46,10 +46,10 @@ class ScrollLite extends React.Component {
 
     }
 
-    render(){
+    render() {
 
         return (
-          <span onClick={::this.scrollToTop} className={this.props.className} style={this.props.style}>{this.props.name}</span>
+            <span onClick={this.scrollToTop} className={this.props.className} style={this.props.style}>{this.props.name}</span>
         );
 
     }

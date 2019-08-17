@@ -16,18 +16,20 @@ internals.style = {
     position: 'relative'
 };
 
-class Container extends React.Component  {
+class Container extends React.Component {
+
     render(){
+
         return (
-          <div className='container-fluid main' style={internals.style}>
-            <Hero/>
-            <About/>
-            <SocialMedia/>
-            <ImageGrid/>
-            <MusicPlayer/>
-            <VideoPlayer/>
-            <Projects/>
-          </div>
+            <div className='container-fluid main' style={internals.style}>
+              <Hero/>
+              <About/>
+              <SocialMedia/>
+              <ImageGrid/>
+              <MusicPlayer/>
+              <VideoPlayer/>
+              <Projects/>
+            </div>
         );
     }
 }

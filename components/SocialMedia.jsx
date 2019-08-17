@@ -17,27 +17,30 @@ const StyleSheet = {
 };
 
 class SocialMedia extends React.Component {
+
     render() {
+
         return (
-          <Grid id='social'>
-            <Row>
-              <Col xs={12} sm={12}>
-                <h1>Social</h1>
-              </Col>
-              <Col xs={12} sm={4}>
-                <h3><span className='fa fa-facebook'></span></h3>
-                <iframe src={MediaOutlet.facebook} style={StyleSheet} frameBorder='0' allowTransparency='true'></iframe>
-              </Col>
-              <Col xs={12} sm={4}>
-                <h3><span className='fa fa-twitter'></span></h3>
-                <Twitter />
-              </Col>
-              <Col xs={12} sm={4}>
-                <h3><span className='fa fa-instagram'></span></h3>
-                <Instagram />
-              </Col>
-            </Row>
-          </Grid>
+
+            <Container id='social'>
+                <Row>
+                    <Col xs={12} sm={12}>
+                        <h1>Social</h1>
+                    </Col>
+                    <Col xs={12} sm={4}>
+                        <h3><span className='fa fa-facebook'></span></h3>
+                        <iframe src={MediaOutlet.facebook} style={StyleSheet} frameBorder='0' allowTransparency='true'></iframe>
+                    </Col>
+                    <Col xs={12} sm={4}>
+                        <h3><span className='fa fa-twitter'></span></h3>
+                        <Twitter />
+                    </Col>
+                    <Col xs={12} sm={4}>
+                        <h3><span className='fa fa-instagram'></span></h3>
+                        <Instagram />
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }

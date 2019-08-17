@@ -32,15 +32,17 @@ internals.styles = {
 };
 
 class Hero extends React.Component {
+
     render() {
+
         return (
-          <Jumbotron style={internals.styles.hero} id='top'>
-            <div>
-              <h1 style={internals.styles.h1}>{heroObj.title}</h1>
-              <h3 style={internals.styles.h3}>{heroObj.subtitle}</h3>
-              <ScrollLite style={internals.styles.scroll} id='about' speed={5} className='fa fa-arrow-down fa-2x bounce'></ScrollLite>
-            </div>
-          </Jumbotron>
+            <Jumbotron style={internals.styles.hero} id='top'>
+                <div>
+                    <h1 style={internals.styles.h1}>{heroObj.title}</h1>
+                    <h3 style={internals.styles.h3}>{heroObj.subtitle}</h3>
+                    <ScrollLite style={internals.styles.scroll} id='about' speed={5} className='fa fa-arrow-down fa-2x bounce'></ScrollLite>
+                </div>
+            </Jumbotron>
         );
     }
 }

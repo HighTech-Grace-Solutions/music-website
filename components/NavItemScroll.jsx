@@ -5,7 +5,7 @@ import { NavItem } from 'react-bootstrap';
 
 class NavItemScroll extends React.Component {
 
-    getTop(){
+    getTop() {
 
         const top = {
             box: document.getElementById(this.props.id).getBoundingClientRect().top,
@@ -16,7 +16,7 @@ class NavItemScroll extends React.Component {
         return Math.round(top.box + top.scroll - top.client);
     }
 
-    scrollToTop(){
+    scrollToTop() {
 
         const top = this.getTop();
         const speed = this.props.speed || 20;
@@ -47,14 +47,13 @@ class NavItemScroll extends React.Component {
 
     }
 
-    render(){
+    render() {
 
         return (
-          <NavItem eventKey={this.props.eventKey} onClick={::this.scrollToTop}>{this.props.name}</NavItem>
+
+            <NavItem eventKey={this.props.eventKey} onClick={this.scrollToTop}>{this.props.name}</NavItem>
         );
-
     }
-
 }
 
 export default NavItemScroll;

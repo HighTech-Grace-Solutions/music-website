@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const gridObj = {
   localbuzz: {
@@ -17,26 +17,29 @@ const gridObj = {
 };
 
 class ImageGrid extends React.Component {
-  render() {
-    return (
-      <Grid id='images'>
-        <h1>Images / Photos </h1>
-        <h3>Local Buzz Acoustic Showcase - 2014</h3>
-        <Row className='show-grid'>
-          <Col xs={12} md={4}>
-            <Image src={gridObj.localbuzz.img_1} responsive />
-          </Col>
-          <Col xs={12} md={4}>
-            <Image src={gridObj.localbuzz.img_2} responsive />
-          </Col>
-          <Col xs={12} md={4}>
-            <Image src={gridObj.localbuzz.img_3} responsive />
-          </Col>
-        </Row>
-        <h5>I jammed out some really fun acoustic shows @TheLocalBuzz.</h5>
-      </Grid>
-    );
-  }
+
+    render() {
+
+        return (
+
+            <Container id='images'>
+                <h1>Images / Photos </h1>
+                <h3>Local Buzz Acoustic Showcase - 2014</h3>
+                <Row className='show-grid'>
+                    <Col xs={12} md={4}>
+                        <Image src={gridObj.localbuzz.img_1} responsive />
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <Image src={gridObj.localbuzz.img_2} responsive />
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <Image src={gridObj.localbuzz.img_3} responsive />
+                    </Col>
+                </Row>
+                <h5>I jammed out some really fun acoustic shows @TheLocalBuzz.</h5>
+            </Container>
+        );
+    }
 }
 
 export default ImageGrid;

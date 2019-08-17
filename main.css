@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Source+Sans+Pro');
 
-body{
+body {
   font-family: 'Source Sans Pro', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,31 +22,31 @@ body:before {
   background-size: cover;
 }
 
-.bungee{
+.bungee {
   font-family: 'Bungee Shade', cursive;
 }
 
-h1{
+h1 {
   font-family: 'Bungee Shade', cursive;
 }
 
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p {
   color: white;
 }
 
-.main > .container{
+.main > .container {
   padding-top: 5rem;
 }
 
-@keyframes bounce{
-  from{
+@keyframes bounce {
+  from {
     transform: translateY(0px);
   }
-  to{
+  to {
     transform: translateY(-20px);
   }
 }
 
-.bounce{
+.bounce {
   animation: bounce 1.2s ease 0s infinite alternate;
 }
