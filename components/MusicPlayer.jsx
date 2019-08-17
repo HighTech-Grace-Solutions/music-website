@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 const BandCamp = {
     runaway: 'https://bandcamp.com/EmbeddedPlayer/album=2832270786/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/',
@@ -20,7 +20,7 @@ class MusicPlayer extends React.Component {
 
         return (
 
-            <Container id='music'>
+            <Grid id='music'>
                 <Row>
                     <Col xs={12} sm={12}>
                         <h1>Recordings</h1>
@@ -38,7 +38,7 @@ class MusicPlayer extends React.Component {
                         </iframe>
                     </Col>
                 </Row>
-            </Container>
+            </Grid>
         );
     }
 }

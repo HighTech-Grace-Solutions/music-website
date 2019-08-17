@@ -5,8 +5,7 @@ import Instafeed from 'instafeed.js';
 
 class Instagram extends React.Component {
 
-    render() {
-
+    componentDidMount() {
         new Instafeed({
             get: 'user',
             userId: '939099016',
@@ -15,9 +14,12 @@ class Instagram extends React.Component {
             limit: '4',
             template: '<a href="{{link}}"><img style="height:auto; width:50%;" src="{{image}}"></a>'
         }).run();
+    }
+
+    render() {
 
         return (
-          <div id='instafeed'></div>
+            <div id="instafeed"></div>
         );
     }
 }

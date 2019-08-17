@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 const gridObj = {
   localbuzz: {
@@ -22,7 +22,7 @@ class ImageGrid extends React.Component {
 
         return (
 
-            <Container id='images'>
+            <Grid id='images'>
                 <h1>Images / Photos </h1>
                 <h3>Local Buzz Acoustic Showcase - 2014</h3>
                 <Row className='show-grid'>
@@ -37,7 +37,7 @@ class ImageGrid extends React.Component {
                     </Col>
                 </Row>
                 <h5>I jammed out some really fun acoustic shows @TheLocalBuzz.</h5>
-            </Container>
+            </Grid>
         );
     }
 }

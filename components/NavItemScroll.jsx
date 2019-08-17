@@ -51,7 +51,7 @@ class NavItemScroll extends React.Component {
 
         return (
 
-            <NavItem eventKey={this.props.eventKey} onClick={this.scrollToTop}>{this.props.name}</NavItem>
+            <NavItem eventKey={this.props.eventKey} onClick={() => this.scrollToTop()}>{this.props.name}</NavItem>
         );
     }
 }

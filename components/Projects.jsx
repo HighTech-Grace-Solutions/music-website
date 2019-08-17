@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Grid, Row, Col} from 'react-bootstrap';
 
 class Projects extends React.Component {
 
@@ -9,7 +9,7 @@ class Projects extends React.Component {
 
         return (
 
-            <Container id='projects'>
+            <Grid id='projects'>
                 <h1> Past Musical Projects </h1>
                 <Row className='show-grid'>
                     <Col xs={12}>
@@ -18,7 +18,7 @@ class Projects extends React.Component {
                         <p><a href='https://norwood.bandcamp.com/'>Check out our bandcamp!</a></p>
                     </Col>
                 </Row>
-            </Container>
+            </Grid>
         );
     }
 }

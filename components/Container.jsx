@@ -22,13 +22,13 @@ class Container extends React.Component {
 
         return (
             <div className='container-fluid main' style={internals.style}>
-              <Hero/>
-              <About/>
-              <SocialMedia/>
-              <ImageGrid/>
-              <MusicPlayer/>
-              <VideoPlayer/>
-              <Projects/>
+                <Hero/>
+                <About/>
+                <SocialMedia/>
+                <ImageGrid/>
+                <MusicPlayer/>
+                <VideoPlayer/>
+                <Projects/>
             </div>
         );
     }
