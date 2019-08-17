@@ -23,7 +23,7 @@ const navObj = {
     }
 };
 
-class Navigation extends React.Component {
+export default class Navigation extends React.Component {
 
     render() {
 
@@ -67,5 +67,3 @@ class Navigation extends React.Component {
         );
     }
 }
-
-export default Navigation;

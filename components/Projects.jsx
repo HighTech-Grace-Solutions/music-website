@@ -3,7 +3,7 @@
 import React from 'react';
 import { Grid, Row, Col} from 'react-bootstrap';
 
-class Projects extends React.Component {
+export default class Projects extends React.Component {
 
     render() {
 
@@ -22,5 +22,3 @@ class Projects extends React.Component {
         );
     }
 }
-
-export default Projects;

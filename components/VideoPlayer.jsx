@@ -3,7 +3,7 @@
 import React from 'react';
 import { Grid, Row, Col, ResponsiveEmbed } from 'react-bootstrap';
 
-class VideoPlayer extends React.Component {
+export default class VideoPlayer extends React.Component {
 
     render() {
 
@@ -23,5 +23,3 @@ class VideoPlayer extends React.Component {
         );
     }
 }
-
-export default VideoPlayer;

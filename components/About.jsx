@@ -2,13 +2,12 @@
 
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-const internals = {};
 
-internals.style = {
+const style = {
     background: 'rgba(0,0,0,0.5)'
 };
 
-class About extends React.Component {
+export default class About extends React.Component {
 
     render() {
 
@@ -16,7 +15,7 @@ class About extends React.Component {
 
             <Grid id='about'>
                 <h1>About / Bio</h1>
-                <Row className='show-grid' style={internals.style}>
+                <Row className='show-grid' style={style}>
                     <Col xs={12} sm={6}>
                         <h3>
                             Where it all started...
@@ -87,5 +86,3 @@ class About extends React.Component {
         );
     }
 }
-
-export default About;

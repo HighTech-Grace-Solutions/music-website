@@ -2,26 +2,27 @@
 
 import React from 'react';
 
-class Twitter extends React.Component {
+export default class Twitter extends React.Component {
 
     render() {
 
-        window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-        if (d.getElementById(id)){ return t; }
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-            t._e = []; t.ready = function(f) {
-              t._e.push(f);
-        };
-        return t;
-        }(document, 'script', 'twitter-wjs'));
+        window.twttr = (
+            function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+                if (d.getElementById(id)){ return t; }
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                    t._e = []; t.ready = function(f) {
+                        t._e.push(f);
+                };
+                return t;
+            }(document, 'script', 'twitter-wjs')
+        );
 
         return (
 
-            <a
-                href='https://twitter.com/jareddonisvitch'
+            <a  href='https://twitter.com/jareddonisvitch'
                 className='twitter-timeline'
                 data-show-count='false'
                 data-show-screen-name='false'
@@ -32,5 +33,3 @@ class Twitter extends React.Component {
         );
     }
 }
-
-export default Twitter;

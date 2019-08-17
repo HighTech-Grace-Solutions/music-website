@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class ScrollLite extends React.Component {
+export default class ScrollLite extends React.Component {
 
     getTop() {
 
@@ -22,38 +22,33 @@ class ScrollLite extends React.Component {
 
         let y = Math.floor(window.scrollY);
 
-        if(y < top){
+        if (y < top) {
 
             const down = setInterval(() => {
                 y = y + speed;
-                if(y >= top){
+                if (y >= top) {
                     return clearInterval(down);
                 }
                 window.scrollTo(0, y);
             }, 3);
 
-        } else if(y > top){
+        } else if (y > top) {
 
             const up = setInterval(() => {
                 y = y - speed;
-                if(y <= top){
+                if (y <= top) {
                     return clearInterval(up);
                 }
                 window.scrollTo(0, y);
             }, 3);
-
         }
-
     }
 
     render() {
 
         return (
+
             <span onClick={() => this.scrollToTop()} className={this.props.className} style={this.props.style}>{this.props.name}</span>
         );
-
     }
-
 }
-
-export default ScrollLite;

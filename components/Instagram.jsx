@@ -3,9 +3,10 @@
 import React from 'react';
 import Instafeed from 'instafeed.js';
 
-class Instagram extends React.Component {
+export default class Instagram extends React.Component {
 
     componentDidMount() {
+
         new Instafeed({
             get: 'user',
             userId: '939099016',
@@ -23,5 +24,3 @@ class Instagram extends React.Component {
         );
     }
 }
-
-export default Instagram;

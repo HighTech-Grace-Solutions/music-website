@@ -8,13 +8,13 @@ const BandCamp = {
     storm: 'https://bandcamp.com/EmbeddedPlayer/album=647548609/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/track=1922035254/transparent=true/'
 };
 
-const StyleSheet = {
+const style = {
     border: '0',
     width: '100%',
     height: '700px'
 };
 
-class MusicPlayer extends React.Component {
+export default class MusicPlayer extends React.Component {
 
     render() {
 
@@ -27,13 +27,13 @@ class MusicPlayer extends React.Component {
                     </Col>
                     <Col xs={12} sm={6}>
                         <h3>Runaway EP <i>- released October 24, 2013</i></h3>
-                        <iframe style={StyleSheet} src={BandCamp.runaway} seamless>
+                        <iframe style={style} src={BandCamp.runaway} seamless>
                             <a href='https://donisvitch.bandcamp.com/album/runaway'>Runaway</a>
                         </iframe>
                     </Col>
                     <Col xs={12} sm={6}>
                         <h3>Riding Out The Storm <i>- released August 1, 2013</i></h3>
-                        <iframe style={StyleSheet} src={BandCamp.storm} seamless>
+                        <iframe style={style} src={BandCamp.storm} seamless>
                             <a href='https://penumbrarecordings.bandcamp.com/track/riding-out-the-storm'>Riding Out The Storm</a>
                         </iframe>
                     </Col>
@@ -42,5 +42,3 @@ class MusicPlayer extends React.Component {
         );
     }
 }
-
-export default MusicPlayer;

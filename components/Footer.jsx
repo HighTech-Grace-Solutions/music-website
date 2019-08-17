@@ -9,34 +9,32 @@ const footerObj = {
     date: date.getFullYear()
 };
 
-const styleSheet = {
-  container:{
-      background: '',
-      left:'0px',
-      right:'0px',
-      width: '100vw',
-      padding:'2em',
-      color:'#9d9d9d',
-      marginTop:'5em'
-  },
-  footer:{
-      textAlign: 'center'
-  }
+const styles = {
+    container:{
+        background: '',
+        left:'0px',
+        right:'0px',
+        width: '100vw',
+        padding:'2em',
+        color:'#9d9d9d',
+        marginTop:'5em'
+    },
+    footer:{
+        textAlign: 'center'
+    }
 };
 
-class Footer extends React.Component {
+export default class Footer extends React.Component {
 
     render(){
 
         return (
 
-            <div style={styleSheet.container}>
-                <footer style={styleSheet.footer}>
+            <div style={styles.container}>
+                <footer style={styles.footer}>
                     <p>&copy; {footerObj.date} - {footerObj.name}</p>
                 </footer>
             </div>
         );
     }
 }
-
-export default Footer;

@@ -3,7 +3,7 @@
 import React from 'react';
 import { NavItem } from 'react-bootstrap';
 
-class NavItemScroll extends React.Component {
+export default class NavItemScroll extends React.Component {
 
     getTop() {
 
@@ -23,7 +23,7 @@ class NavItemScroll extends React.Component {
 
         let y = Math.floor(window.scrollY);
 
-        if(y < top){
+        if (y < top) {
 
             const down = setInterval(() => {
                 y = y + speed;
@@ -33,7 +33,7 @@ class NavItemScroll extends React.Component {
                 window.scrollTo(0, y);
             }, 3);
 
-        } else if(y > top){
+        } else if (y > top) {
 
             const up = setInterval(() => {
                 y = y - speed;
@@ -42,9 +42,7 @@ class NavItemScroll extends React.Component {
                 }
                 window.scrollTo(0, y);
             }, 3);
-
         }
-
     }
 
     render() {
@@ -55,5 +53,3 @@ class NavItemScroll extends React.Component {
         );
     }
 }
-
-export default NavItemScroll;

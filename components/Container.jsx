@@ -9,19 +9,18 @@ import SocialMedia from './SocialMedia.jsx';
 import Projects from './Projects.jsx';
 import About from './About.jsx';
 
-const internals = {};
-
-internals.style = {
+const style = {
     height: 'auto',
     position: 'relative'
 };
 
-class Container extends React.Component {
+export default class Container extends React.Component {
 
     render(){
 
         return (
-            <div className='container-fluid main' style={internals.style}>
+          
+            <div className='container-fluid main' style={style}>
                 <Hero/>
                 <About/>
                 <SocialMedia/>
@@ -33,5 +32,3 @@ class Container extends React.Component {
         );
     }
 }
-
-export default Container;
