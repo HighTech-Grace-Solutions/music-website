@@ -1,7 +1,7 @@
 {
   "name": "jdonisvitch-music",
   "version": "0.5.1",
-  "description": "A single page website for highlighting music",
+  "description": "A single page website for highlighting musical work.",
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --progress --mode development",
@@ -11,22 +11,21 @@
   "author": "Jerry Garcia @ BRS",
   "license": "MIT",
   "dependencies": {
-    "instafeed.js": "^1.4.1",
     "npm": "^6.13.4",
-    "react": "^16.11.0",
+    "react": "^16.12.0",
     "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "eslint": "^6.6.0",
-    "eslint-plugin-react": "^7.16.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
+    "eslint": "^6.7.2",
+    "eslint-plugin-react": "^7.17.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   }
 }

@@ -18,30 +18,7 @@ export default class ScrollLite extends React.Component {
     scrollToTop() {
 
         const top = this.getTop();
-        const speed = this.props.speed || 20;
-
-        let y = Math.floor(window.scrollY);
-
-        if (y < top) {
-
-            const down = setInterval(() => {
-                y = y + speed;
-                if (y >= top) {
-                    return clearInterval(down);
-                }
-                window.scrollTo(0, y);
-            }, 3);
-
-        } else if (y > top) {
-
-            const up = setInterval(() => {
-                y = y - speed;
-                if (y <= top) {
-                    return clearInterval(up);
-                }
-                window.scrollTo(0, y);
-            }, 3);
-        }
+        window.scrollTo(0, top);
     }
 
     render() {
