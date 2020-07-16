@@ -19,14 +19,14 @@ export default class Container extends React.Component {
     render(){
 
         return (
-          
-            <div className='container-fluid main' style={style}>
+
+            <div className="container-fluid main" style={style}>
                 <Hero/>
+                <MusicPlayer/>
+                <VideoPlayer/>
                 <About/>
                 <SocialMedia/>
                 <ImageGrid/>
-                <MusicPlayer/>
-                <VideoPlayer/>
                 <Projects/>
             </div>
         );

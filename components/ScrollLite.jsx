@@ -25,7 +25,9 @@ export default class ScrollLite extends React.Component {
 
         return (
 
-            <span onClick={() => this.scrollToTop()} className={this.props.className} style={this.props.style}>{this.props.name}</span>
+            <div onClick={() => this.scrollToTop()} className={this.props.className} style={this.props.style}>
+                {this.props.name}
+            </div>
         );
     }
 }

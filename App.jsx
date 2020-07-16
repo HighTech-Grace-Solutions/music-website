@@ -11,11 +11,11 @@ export default class App extends React.Component {
 
         return (
 
-            <div>
+            <>
                 <Navigation />
                 <Container />
                 <Footer />
-            </div>
+            </>
         );
     }
 }

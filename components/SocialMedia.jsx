@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Twitter from './Twitter.jsx';
 
 const MediaOutlet = {
@@ -21,21 +21,21 @@ export default class SocialMedia extends React.Component {
 
         return (
 
-            <Grid id='social'>
+            <Container id="social">
                 <Row>
                     <Col xs={12} sm={12}>
                         <h1>Social</h1>
                     </Col>
                     <Col xs={12} sm={6}>
-                        <h3><span className='fa fa-facebook'></span></h3>
-                        <iframe src={MediaOutlet.facebook} style={style} frameBorder='0' allowtransparency='true'></iframe>
+                        <h3><span className="fa fa-facebook"></span></h3>
+                        <iframe src={MediaOutlet.facebook} style={style} frameBorder="0" allowtransparency="true"></iframe>
                     </Col>
                     <Col xs={12} sm={6}>
-                        <h3><span className='fa fa-twitter'></span></h3>
+                        <h3><span className="fa fa-twitter"></span></h3>
                         <Twitter />
                     </Col>
                 </Row>
-            </Grid>
+            </Container>
         );
     }
 }

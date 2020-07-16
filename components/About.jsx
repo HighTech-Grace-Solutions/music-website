@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const style = {
     background: 'rgba(0,0,0,0.5)'
@@ -13,9 +13,9 @@ export default class About extends React.Component {
 
         return (
 
-            <Grid id='about'>
+            <Container id="about">
                 <h1>About / Bio</h1>
-                <Row className='show-grid' style={style}>
+                <Row className="show-grid" style={style}>
                     <Col xs={12} sm={6}>
                         <h3>
                             Where it all started...
@@ -82,7 +82,7 @@ export default class About extends React.Component {
                         </h5>
                     </Col>
                 </Row>
-            </Grid>
+            </Container>
         );
     }
 }

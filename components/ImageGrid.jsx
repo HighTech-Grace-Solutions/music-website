@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const gridObj = {
     localbuzz: {
@@ -22,22 +22,22 @@ export default class ImageGrid extends React.Component {
 
         return (
 
-            <Grid id='images'>
+            <Container id="images">
                 <h1>Images / Photos</h1>
                 <h3>Local Buzz Acoustic Showcase - 2014</h3>
-                <Row className='show-grid'>
-                    <Col xs={12} md={4}>
-                        <Image src={gridObj.localbuzz.img_1} responsive />
+                <Row className="show-grid">
+                    <Col xs md={4}>
+                        <Image src={gridObj.localbuzz.img_1} width="100%"/>
                     </Col>
-                    <Col xs={12} md={4}>
-                        <Image src={gridObj.localbuzz.img_2} responsive />
+                    <Col xs md={4}>
+                        <Image src={gridObj.localbuzz.img_2} width="100%" />
                     </Col>
-                    <Col xs={12} md={4}>
-                        <Image src={gridObj.localbuzz.img_3} responsive />
+                    <Col xs md={4}>
+                        <Image src={gridObj.localbuzz.img_3} width="100%" />
                     </Col>
                 </Row>
-                <h5>I jammed out some really fun acoustic shows @TheLocalBuzz.</h5>
-            </Grid>
+                <h5>Jammed out some really fun acoustic shows @TheLocalBuzz.</h5>
+            </Container>
         );
     }
 }

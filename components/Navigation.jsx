@@ -1,7 +1,7 @@
 'use-strict';
 
 import React from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import NavItemScroll from './NavItemScroll.jsx';
 import ScrollLite from './ScrollLite.jsx';
 
@@ -11,15 +11,15 @@ const navObj = {
     logo: 'images/logo-transparent.png',
     navStyle: {
         fontSize: '1em',
-        color: 'white'
-    },
-    navBarStyle: {
-        backgroundColor: 'rgba(0,0,0,0.8)'
+        color: 'white',
+        marginTop: '16px'
     },
     brandStyle: {
         color: 'white',
-        fontSize: '1.4em',
-        marginTop: '0px'
+        fontSize: '1.4em'
+    },
+    linkStyle: {
+      marginRight: '8px'
     }
 };
 
@@ -29,40 +29,52 @@ export default class Navigation extends React.Component {
 
         return (
 
-            <Navbar inverse fixedTop style={navObj.navBarStyle}>
-                <Navbar.Header>
-                    <Navbar.Brand className='bungee'>
-                        <a style={navObj.brandStyle}><ScrollLite id='top' name={navObj.title}></ScrollLite></a>
-                    </Navbar.Brand>
-                    <Navbar.Toggle/>
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav style={navObj.navStyle}>
-                        <NavItemScroll eventKey={1} id='about' name='ABOUT'></NavItemScroll>
-                        <NavItemScroll eventKey={2} id='images' name='IMAGES'></NavItemScroll>
-                        <NavItemScroll eventKey={3} id='projects' name='PROJECTS'></NavItemScroll>
-                        <NavItemScroll eventKey={4} id='music' name='MUSIC'></NavItemScroll>
-                        <NavItemScroll eventKey={5} id='social' name='SOCIAL'></NavItemScroll>
-                        <NavItemScroll eventKey={6} id='video' name='VIDEO'></NavItemScroll>
-                    </Nav>
-                    <Nav pullRight>
-                        <NavItem eventKey={7} href='https://facebook.com/donisvitchmusic' target='_blank' alt='Facebook'>
-                            <span className='fa fa-facebook'></span>
-                        </NavItem>
-                        <NavItem eventKey={8} href='https://instagram.com/jdonisvitch' target='_blank' alt='Instagram'>
-                            <span className='fa fa-instagram'></span>
-                        </NavItem>
-                        <NavItem eventKey={9} href='https://twitter.com/jareddonisvitch' target='_blank' alt='Twitter'>
-                            <span className='fa fa-twitter'></span>
-                        </NavItem>
-                        <NavItem eventKey={10} href='https://reverbnation.com/donisvitch' target='_blank' alt='ReverbNation'>
-                            <span className='fa fa-star'></span>
-                        </NavItem>
-                        <NavItem eventKey={11} href='https://donisvitch.bandcamp.com' target='_blank' alt='Bandcamp'>
-                            <span className='fa fa-bandcamp'></span>
-                        </NavItem>
-                    </Nav>
-                </Navbar.Collapse>
+            <Navbar expand bg="dark" variant="dark" sticky="top">
+                <Navbar.Brand className="bungee white" style={navObj.brandStyle}>
+                    {navObj.title}
+                </Navbar.Brand>
+                <Nav className="mr-auto" style={navObj.navStyle}>
+                    <Nav.Link
+                        href="https://facebook.com/donisvitchmusic"
+                        target="_blank"
+                        alt="Facebook"
+                        style={navObj.linkStyle}
+                    >
+                        <span className="fa fa-facebook white"></span>
+                    </Nav.Link>
+                    <Nav.Link
+                        href="https://instagram.com/jdonisvitch"
+                        target="_blank"
+                        alt="Instagram"
+                        style={navObj.linkStyle}
+                      >
+                        <span className="fa fa-instagram white"></span>
+                    </Nav.Link>
+                    <Nav.Link
+                        href="https://twitter.com/jareddonisvitch"
+                        target="_blank"
+                        alt="Twitter"
+                        style={navObj.linkStyle}
+                    >
+                        <span className="fa fa-twitter white"></span>
+                    </Nav.Link>
+                    <Nav.Link
+                        href="https://reverbnation.com/donisvitch"
+                        target="_blank"
+                        alt="ReverbNation"
+                        style={navObj.linkStyle}
+                      >
+                        <span className="fa fa-star white"></span>
+                    </Nav.Link>
+                    <Nav.Link
+                        href="https://donisvitch.bandcamp.com"
+                        target="_blank"
+                        alt="Bandcamp"
+                        style={navObj.linkStyle}
+                    >
+                        <span className="fa fa-bandcamp white"></span>
+                    </Nav.Link>
+                </Nav>
             </Navbar>
         );
     }

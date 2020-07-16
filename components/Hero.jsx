@@ -35,11 +35,11 @@ export default class Hero extends React.Component {
 
         return (
 
-            <Jumbotron style={styles.hero} id='top'>
+            <Jumbotron style={styles.hero} id="top">
                 <div>
                     <h1 style={styles.h1}>{heroObj.title}</h1>
                     <h3 style={styles.h3}>{heroObj.subtitle}</h3>
-                    <ScrollLite style={styles.scroll} id='about' speed={5} className='fa fa-arrow-down fa-2x bounce'></ScrollLite>
+                    <ScrollLite style={styles.scroll} id="music" speed={5} className="fa fa-arrow-down fa-2x bounce"></ScrollLite>
                 </div>
             </Jumbotron>
         );

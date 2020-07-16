@@ -1,7 +1,12 @@
 'use-strict';
 
 import React from 'react';
-import { NavItem } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+
+const style = {
+  color: '#fff',
+  marginRight: '6px'
+}
 
 export default class NavItemScroll extends React.Component {
 
@@ -26,7 +31,9 @@ export default class NavItemScroll extends React.Component {
 
         return (
 
-            <NavItem eventKey={this.props.eventKey} onClick={() => this.scrollToTop()}>{this.props.name}</NavItem>
+            <Nav.Link onClick={() => this.scrollToTop()} style={style}>
+                {this.props.name}
+            </Nav.Link>
         );
     }
 }
