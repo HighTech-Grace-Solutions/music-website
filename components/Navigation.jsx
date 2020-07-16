@@ -12,14 +12,15 @@ const navObj = {
     navStyle: {
         fontSize: '1em',
         color: 'white',
-        marginTop: '16px'
+        marginTop: '16px',
+        float: 'right'
     },
     brandStyle: {
         color: 'white',
         fontSize: '1.4em'
     },
     linkStyle: {
-      marginRight: '8px'
+      marginRight: '16px'
     }
 };
 
